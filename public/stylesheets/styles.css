@@ -1,0 +1,209 @@
+
+/*for buttons*/
+@import url(http://fonts.googleapis.com/css?family=Nunito:300);
+
+body { font-family: "Nunito", sans-serif; font-size: 24px; }
+a    { text-decoration: none; }
+p    { text-align: center; }
+sup  { font-size: 36px; font-weight: 100; line-height: 55px; }
+
+.button
+{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #666;
+
+  font-size: 24px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+  display: inline-block; 
+  top:0; right:0; bottom:0; left:0;
+  
+  padding: 20px 0;
+  width: 220px;
+  height:3.3em;
+
+  background: #666;
+  border: 1px solid #666;
+  color: #FFF;
+  overflow: hidden;
+  
+  transition: all 0.5s;
+}
+
+.button:hover, .button:active 
+{
+  text-decoration: none;
+  color: #666;
+  border-color: #666;
+  background: #FFF;
+}
+
+.button span 
+{
+  display: inline-block;
+  position: relative;
+  padding-right: 0;
+  
+  transition: padding-right 0.5s;
+}
+
+.button span:after 
+{
+  content: ' ';  
+  position: absolute;
+  top: 0;
+  right: -18px;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+  margin-top: -10px;
+
+  background: rgba(0, 0, 0, 0);
+  border: 3px solid #FFF;
+  border-top: none;
+  border-right: none;
+
+  transition: opacity 0.5s, top 0.5s, right 0.5s;
+  transform: rotate(-45deg);
+}
+
+.button:hover span, .button:active span 
+{
+  padding-right: 30px;
+}
+
+.button:hover span:after, .button:active span:after 
+{
+  transition: opacity 0.5s, top 0.5s, right 0.5s;
+  opacity: 1;
+  border-color: #666;
+  right: 0;
+  top: 50%;
+}
+/*button end*/
+
+.jumbotron {
+  background-image:url('../images/Safrica.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: none;
+  height: 35em;
+}
+
+.jumbotron h1 {
+  color: black;
+  font-size: 48px;  
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  color: black;
+  float: left;
+}
+
+.more {
+  background-color: #fff;
+}
+
+
+
+#cheetah{
+  background-size: cover;
+  background-image: url('../images/mammals/cheetah.jpg');
+  height: 20em;
+}
+
+#wRhino{
+  background-size: cover;
+  background-image: url('../images/mammals/whiteRhino.jpg');
+  height: 20em;
+}
+
+#bRhino{
+  background-size: cover;
+  background-image: url('../images/mammals/blackRhino.jpg');
+  height: 20em;
+}
+
+#eleph{
+  background-size: cover;
+  background-image: url('../images/mammals/africanElephant.jpg');
+  height: 20em;
+}
+
+#seaTurtle{
+  background-size: cover;
+  background-image: url('../images/reptAmphib/loggerheadSeaTurtle.jpg');
+  height: 24em;
+}
+
+#reedFrog{
+  background-size: cover;
+  background-image: url('../images/reptAmphib/reedFrog.png');
+  height: 24em;
+}
+
+#blueCrane{
+  background-size: cover;
+  background-image: url('../images/birds/blueCrane.jpg');
+  height: 23em;
+}
+
+#capeVulture{
+  background-size: cover;
+  background-image: url('../images/birds/capeVulture.png');
+  height: 23em;
+}
+
+#africanPenguin{
+  background-size: cover;
+  background-image: url('../images/birds/africanPenguin.jpg');
+  height: 23em;
+}
+
+#abalone{
+  background-size: cover;
+  background-image: url('../images/seaCreatures/abalone.jpg');
+  height: 20em;
+}
+
+#blueWhale{
+  background-size: cover;
+  background-image: url('../images/seaCreatures/pygmyBlueWhale.jpg');
+  height: 20em;
+}
+
+#seahorse{
+  background-size: cover;
+  background-image: url('../images/seaCreatures/knysnaSeahorse.jpg');
+  height: 20em;
+}
+
+.animalInfo{
+  height: 11em;
+}
+
+.navbar-brand{
+  background-image: url('../logo.png');
+  background-size: cover;
+  width: 3.1em;
+
+}
+#jumbo{
+  background-image: none;
+}
+#infoPane{
+  
+  min-height: 10em;
+}

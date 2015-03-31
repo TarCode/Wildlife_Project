@@ -1,0 +1,17 @@
+<div class = "container">
+	{{#each animals}}
+		<div class="row">
+				<div class="{{this.col}}">
+	        <h3>{{this.name}}</h3>
+	        <div class = "thumbnail" id = "{{this.id}}">
+
+	        	
+	        </div>
+		    <p id = 'infoPane'>{{this.info}}</p>
+		    <p><a href='#' class="button">
+			  <span>SAVE ME</span>
+			</a> </p>
+		</div>
+	{{/each}}
+	
+</div>		
